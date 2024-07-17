@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="icon" href="images/favicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+
+    <main class="interface">
+        <header
+            class="d-flex justify-content-center justify-content-md-between  align-items-center flex-wrap  pt-4 mx-5">
+            <div class="bg-primary-subtle p-3 py-2 rounded-3 fw-bold order-md-3">
+                <i class="fa-solid fa-location-dot"></i>
+                <span id="location"></span>
+            </div>
+            <div class="order-first order-md-2  mb-4">
+                <div class="findInput position-relative ">
+                    <input type="text" id="findLocation" class="searchInput form-control rounded-pill bg-primary-subtle"
+                        placeholder="Find your location" style="width: 400px; font-weight: 700;">
+                    <button
+                        class="findBtn btn btn-primary btn-sm position-absolute rounded-pill py-2 px-5 top-0 end-0 fw-bold">Search</button>
+                </div>
+            </div>
+            <div class="bg-primary-subtle p-3 py-2 ms-2 rounded-3 fw-bold order-1">
+                <span class="todayDate"></span>
+            </div>
+        </header>
+        <section
+            class="today-weather pt-3 d-flex justify-content-center align-items-center mt-4 flex-column text-white w-75 m-auto ">
+
+        </section>
+        <section>
+            <h2 class="fw-bold text-center fs-5 mt-3 text-white">Forecast</h2>
+            <div class="weatherCards py-2 px-3 d-flex justify-content-around flex-wrap">
+                <!-- display data here  -->
+            </div>
+        </section>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
